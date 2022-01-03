@@ -1,0 +1,11 @@
+#nav {
+  display: flex;
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: auto;
+  justify-content: space-evenly;
+  font-size: 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+}

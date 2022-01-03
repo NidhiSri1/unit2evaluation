@@ -1,0 +1,25 @@
+h1 {
+  text-align: center;
+}
+#checkOut {
+  display: flex;
+}
+#cartD {
+  border: 1px solid red;
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  justify-content: space-around;
+  grid-row-gap: 1%;
+}
+#specificCart {
+  border: 1px solid blue;
+}
+#checkOutDiv {
+  width: 35%;
+  border: 1px solid red;
+}
+#cartImage {
+  height: 70%;
+  width: 100%;
+}
