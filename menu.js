@@ -30,6 +30,7 @@ function displayOnScreen(dishes) {
 
     let price = document.createElement("p");
     price.innerHTML = Math.floor(Math.random() * 500 + 100);
+    console.log(price);
 
     let btn = document.createElement("button");
     btn.innerHTML = "Add To Cart";
@@ -48,4 +49,7 @@ function displayOnScreen(dishes) {
     localStorage.setItem("cart", JSON.stringify(cartArr));
     cartC.innerHTML = `Items In Cart : ${cartArr.length}`;
   }
+}
+function gotocart() {
+  window.location.href = "cart.html";
 }

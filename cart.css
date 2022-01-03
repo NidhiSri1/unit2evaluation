@@ -5,7 +5,7 @@ h1 {
   display: flex;
 }
 #cartD {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 60%;
   display: grid;
   grid-template-columns: repeat(2, 300px);
@@ -13,11 +13,11 @@ h1 {
   grid-row-gap: 1%;
 }
 #specificCart {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 #checkOutDiv {
   width: 35%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 #cartImage {
   height: 70%;
