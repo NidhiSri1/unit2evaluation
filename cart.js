@@ -19,14 +19,14 @@ function displayOnCart(dis) {
 
     let price = document.createElement("p");
 
-    nameC.innerHTML = e.price;
+    price.innerHTML = e.price;
 
     let del = document.createElement("button");
     del.innerHTML = "Remove";
     del.addEventListener("click", function () {
       deleteElemet(index);
     });
-    cartSD.append(cartImg, nameC, price, del);
+    cartSD.append(cartImg, nameC, del);
     mainC.append(cartSD);
   });
   function deleteElemet(i) {
