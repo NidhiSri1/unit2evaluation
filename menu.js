@@ -4,6 +4,7 @@ async function displayDishes() {
       "https://www.themealdb.com/api/json/v1/1/filter.php?a=American"
     );
     let dishes = await url.json();
+    console.log(dishes);
     let arrDishes = dishes.meals;
     displayOnScreen(arrDishes);
     console.log(arrDishes);
