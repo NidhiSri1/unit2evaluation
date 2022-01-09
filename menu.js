@@ -45,8 +45,9 @@ function displayOnScreen(dishes) {
   let cartC = document.getElementById("count");
   cartC.innerHTML = `Items In Cart : ${cartArr.length}`;
   function addToCart(ele) {
+    console.log(ele);
     cartArr.push(ele);
-    console.log(cartArr);
+    // console.log(cartArr);
     localStorage.setItem("cart", JSON.stringify(cartArr));
     cartC.innerHTML = `Items In Cart : ${cartArr.length}`;
   }

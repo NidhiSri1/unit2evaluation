@@ -1,5 +1,5 @@
 let cartArr = JSON.parse(localStorage.getItem("cart")) || [];
-let arr = JSON.parse(localStorage.getItem("updatedCart")) || [];
+
 displayOnCart(cartArr);
 
 function displayOnCart(dis) {
@@ -19,21 +19,27 @@ function displayOnCart(dis) {
 
     let price = document.createElement("p");
 
-    price.innerHTML = e.price;
+    price.innerHTML = Math.floor(Math.random() * 500 + 100);
 
     let del = document.createElement("button");
     del.innerHTML = "Remove";
     del.addEventListener("click", function () {
       deleteElemet(index);
+      // console.log(index);
     });
-    cartSD.append(cartImg, nameC, del);
+    cartSD.append(cartImg, nameC, price, del);
     mainC.append(cartSD);
   });
-  function deleteElemet(i) {
-    cartArr.splice(i, 1);
-    localStorage.setItem("updatedCart", JSON.stringify(cartArr));
-    // displayOnCart(cartArr);
-  }
+}
+
+function deleteElemet(i) {
+  console.log(i);
+  cartArr.splice(i, 1);
+  console.log(cartArr);
+  localStorage.setItem("cart", JSON.stringify(cartArr));
+  let mainC = document.getElementById("cartD");
+  mainC.innerHTML = "";
+  displayOnCart(cartArr);
 }
 
 let rightdiv = document.getElementById("checkOutDiv");
